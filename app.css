@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    text-align: center;
+  }
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ li:hover{
+background-color: gray;
+  }
+  nav li {
+    display: inline-flex;
+    margin-right: 6px;
+    padding: 15px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+div.banner {
+    background: #f1f1f1 url("img/banner7.jpg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 160px;
+    background-size: cover;
+  }
+  
+  section.products {
+    padding: 20px;
+  }
+  
+  .product2 {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .product2 img {
+    width: 100%;
+    max-height: 200px;
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+  
+  }
+  .button:hover{
+    background-color: gray;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  #ac{
+    margin: 0;
+    padding: 0;
+    
+  }
+  /* Sepet öğelerini stilize etmek için CSS */
+
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-item h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.cart-item p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Navbar'daki sepet öğesini stilize etmek için CSS */
+
+nav ul li a[href="#cart"] {
+  position: relative;
+}
+
+nav ul li a[href="#cart"]::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
